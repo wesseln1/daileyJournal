@@ -1,7 +1,6 @@
-header {
-
+h1 {
+   margin-left: 400px;
 }
-
 .flexContainer {
     display: flex;
     justify-content: center;
@@ -10,4 +9,5 @@ header {
 
 .journalEntry {
     width: 25%;
+    height: 50px;
 }

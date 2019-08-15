@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,41 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Dailey Journal</title>
 </head>
+
 <body>
-    <div>
-        
+    <div class="flexContainer">
+        <div>
+            <h1>Journal Entry</h1>
+        </div>
+        <form action="">
+            <fieldset>
+                <label for="journalDate">Date of Entry</label>
+                <input type="date" name="journalDate" id="">
+            </fieldset>
+            <fieldset>
+                <label for="conceptsCovered">Concepts Covered</label>
+                <input type="text" name="conceptsCovered" id="">
+            </fieldset>
+            <fieldset>
+                <label for="journalEntry">Journal Entry</label>
+                <input type="text" name="journalEntry" id="" class="journalEntry">
+            </fieldset>
+            <fieldset>
+                <label for="journalMood">Mood</label>
+                <select>
+                    <option value="happy">Happy</option>
+                    <option value="sad">Sad</option>
+                    <option value="angry">Angry</option>
+                    <option value="confused">Confused</option>
+                    <option value="hungrey">Hungrey</option>
+                    <option value="excited">Excited</option>
+                </select>
+            </fieldset>
+            <div>
+                <input type="button" value="record entry">
+            </div>
+        </form>
     </div>
 </body>
+
 </html>
