@@ -1,0 +1,13 @@
+header {
+
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.journalEntry {
+    width: 25%;
+}
