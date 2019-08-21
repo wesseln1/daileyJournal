@@ -11,37 +11,40 @@
 
 <body>
     <div class="flexContainer">
+
         <div>
             <h1>Journal Entry</h1>
         </div>
-        <form action="">
-            <fieldset>
-                <label for="journalDate">Date of Entry</label>
-                <input type="date" name="journalDate" id="">
-            </fieldset>
-            <fieldset>
-                <label for="conceptsCovered">Concepts Covered</label>
-                <input type="text" name="conceptsCovered" id="">
-            </fieldset>
-            <fieldset>
-                <label for="journalEntry">Journal Entry</label>
-                <input type="text" name="journalEntry" id="" class="journalEntry">
-            </fieldset>
-            <fieldset>
-                <label for="journalMood">Mood</label>
-                <select>
-                    <option>Mood</option>
-                    <option value="happy">Happy</option>
-                    <option value="sad">Sad</option>
-                    <option value="angry">Angry</option>
-                    <option value="confused">Confused</option>
-                    <option value="hungrey">Hungrey</option>
-                    <option value="excited">Excited</option>
-                </select>
-            </fieldset>
-            <div>
-                <input type="button" value="record entry">
-            </div>
+        <div class="formDiv">
+            <form action="">
+                <fieldset>
+                    <label for="journalDate">Date of Entry</label>
+                    <input type="date" name="journalDate" id="">
+                </fieldset>
+                <fieldset>
+                    <label for="conceptsCovered">Concepts Covered</label>
+                    <input type="text" name="conceptsCovered" id="">
+                </fieldset>
+                <fieldset>
+                    <label for="journalEntry">Journal Entry</label>
+                    <input type="text" name="journalEntry" id="" class="journalEntry">
+                </fieldset>
+                <fieldset>
+                    <label for="journalMood">Mood</label>
+                    <select>
+                        <option>Mood</option>
+                        <option value="happy">Happy</option>
+                        <option value="sad">Sad</option>
+                        <option value="angry">Angry</option>
+                        <option value="confused">Confused</option>
+                        <option value="hungrey">Hungrey</option>
+                        <option value="excited">Excited</option>
+                    </select>
+                </fieldset>
+        </div>
+        <div>
+            <button type="button">Record Entry</button>
+        </div>
         </form>
     </div>
 </body>
