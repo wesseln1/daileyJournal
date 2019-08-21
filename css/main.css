@@ -8,12 +8,6 @@ fieldset{
   border-radius: 5px;
 }
 
-/* body{
-  background-color: #FDE8E9;
-  color: #1F2232;
-  font-family: "Courier New", Courier, monospace;
-} */
-
 .flexbox{
   display: flex;
   flex-direction: row;
