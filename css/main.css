@@ -1,22 +1,40 @@
-/* h1 {
-   margin-left: 400px;
-} */
-.flexContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border-right-width: 50%;
-    border-left-width: 50%; 
+
+fieldset{
+  display:flex;
+  flex-direction: column;
+  font-size: 1.25em;
+  border: 1px solid #1F2232;
+  margin: 10px;
+  border-radius: 5px;
 }
 
-/* .journalEntry {
-    width: 25%;
-    height: 50px;
-} */
+.flexbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+button{
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  padding: 7px;
+  font-size: 1em;
+  margin: 15px;
+  border-radius: 5px;
+  background-color: #D1D4D9;
+  /* color: #E3BAC6; */
+}
 
 body {
     margin: auto;
     text-align: center;
+    font-family: "Courier New", Courier, monospace;
     /* Background colors */
     background: linear-gradient(to right, gold, green, gold); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    background-size: 400% 400%;
     -webkit-animation: Gradient 10s ease infinite;
