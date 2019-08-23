@@ -33,3 +33,6 @@ const journalEntry4 = {
     entry: "finaly got flexbox down. Saw a lot of cool ideas in classmates websites.",
     mood: "Happy"
 }
+
+entryArr.push(journalEntry)
+entryArr.push(journalEntry1, journalEntry2, journalEntry3, journalEntry4)
