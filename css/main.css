@@ -6,9 +6,6 @@ fieldset{
   border: 1px solid #1F2232;
   margin: 10px;
   border-radius: 5px;
-  width: 50%;
-  height: 75px;
-
 }
 
 .flexbox{
@@ -22,25 +19,6 @@ h1 {
   font-weight: bold;
   text-align: center;
   color: white;
-}
-
-.formDiv {
-  display: flex;
-  width: 100%;
-  height: auto;
-  flex-direction: column;
-}
-
-.feildsetDiv {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-}
-
-.inputId {
-  width: 50%;
-  height: 30px;
 }
 
 button{
