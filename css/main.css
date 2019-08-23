@@ -6,6 +6,9 @@ fieldset{
   border: 1px solid #1F2232;
   margin: 10px;
   border-radius: 5px;
+  width: 50%;
+  height: 75px;
+
 }
 
 .flexbox{
@@ -36,7 +39,8 @@ h1 {
 }
 
 .inputId {
-
+  width: 50%;
+  height: 30px;
 }
 
 button{
