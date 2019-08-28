@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="/src/css/main.css">
     <title>Dailey Journal</title>
 </head>
 
@@ -19,19 +19,19 @@
             <form action="">
                 <fieldset>
                     <label for="journalDate">Date of Entry</label>
-                    <input type="date" name="journalDate" id="">
+                    <input type="date" name="journalDate" id="dateInput">
                 </fieldset>
                 <fieldset>
                     <label for="conceptsCovered">Concepts Covered</label>
-                    <input type="text" name="conceptsCovered" id="">
+                    <input type="text" name="conceptsCovered" id="conceptInput">
                 </fieldset>
                 <fieldset>
                     <label for="journalEntry">Journal Entry</label>
-                    <input type="text" name="journalEntry" id="" class="journalEntry">
+                    <input type="text" name="journalEntry" id="journalInput" class="journalEntry">
                 </fieldset>
                 <fieldset>
                     <label for="journalMood">Mood</label>
-                    <select>
+                    <select class="moodInput">
                         <option>Mood</option>
                         <option value="happy">Happy</option>
                         <option value="sad">Sad</option>
@@ -43,10 +43,15 @@
                 </fieldset>
         </div>
         <div>
-            <button type="button">Record Entry</button>
+            <button type="button" class="entryButton">Record Entry</button>
         </div>
         </form>
+
+        <div class="flex-container">
+        
+        </div>
     </div>
+    <script src="src/scripts/journal.js"></script>
 </body>
 
 </html>

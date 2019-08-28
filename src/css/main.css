@@ -32,6 +32,32 @@ button{
   /* color: #E3BAC6; */
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  /* width: 100%; */
+}
+
+.journalEntries {
+  display: flex;
+  flex-direction: column;
+  /* width: 50%; */
+  
+}
+
+.entryDiv {
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://i.pinimg.com/originals/e6/61/75/e66175e3718ba427547aa7d6e5ab10d8.jpg');
+  margin: 50px;
+}
+
+.entryText {
+  text-align: start;
+  margin: 10px;
+}
+
 label {
   color: white;
 }
