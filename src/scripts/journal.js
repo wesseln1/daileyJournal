@@ -1,24 +1,26 @@
+
+
 const journalEntry = [ 
 {
-    date: "08-20-19",
+    date: "08-20-2019",
     concept: "css selectors",
     entry: "Learne how to use flexbox, and how to move items and content around with it. (Still shaddy on it)",
     mood: "confused"
 },
 {
-    date: "08-21-19",
+    date: "08-21-2019",
     concept: "group project",
     entry: "Working on tribute project, laying out html and planning website out.",
     mood: "Happy"
 },
 {
-    date: "08-22-19",
+    date: "08-22-2019",
     concept: "wrapping up projects",
     entry: "Finished HTML layout, and started styling. Still confused on flexbox. Getting better at it.",
     mood: "Happy"
 },
 {
-    date: "08-23-19",
+    date: "08-23-2019",
     concept: "demenstration day",
     entry: "finaly got flexbox down. Saw a lot of cool ideas in classmates websites.",
     mood: "Happy"
@@ -39,6 +41,13 @@ const makeEntry = (entry) => {
     `
 }
 
-for(let i = 0; i < journalEntry.length; i++){
-    domInj.innerHTML += makeEntry(journalEntry[i]);
-}
+fetch('http://localhost:8088/journalEntries') // Fetch from the API
+    .then(journalEntry => journalEntry.json())  // Parse as JSON
+    // console.log("entries", entries)
+    .then(parsedEntries => {
+        // What should happen when we finally have the array?  
+        for(let i = 0; i < parsedEntries.length; i++){
+            domInj.innerHTML += makeEntry(parsedEntries[i]);
+        }
+    })
+    
