@@ -3,9 +3,15 @@ fieldset{
   display:flex;
   flex-direction: column;
   font-size: 1.25em;
-  border: 1px solid #1F2232;
-  margin: 10px;
+  border: 5px solid #1F2232;
+  margin: 10px; 
   border-radius: 5px;
+  padding: 10px;
+}
+
+#moodInput, #journalInput, #dateInput, #conceptInput, #entryBtn{
+  background-color: gray;
+  color: white;
 }
 
 .flexbox{
@@ -18,22 +24,44 @@ h1 {
   font-size: 3em;
   font-weight: bold;
   text-align: center;
-  color: white;
+  color: black; 
+  text-shadow: 2px 2px 4px white;
 }
 
-button{
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
-  padding: 7px;
-  font-size: 1em;
-  margin: 15px;
-  border-radius: 5px;
-  background-color: #D1D4D9;
-  /* color: #E3BAC6; */
+.flex-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  /* width: 100%; */
+}
+
+.journalEntries {
+  display: flex;
+  flex-direction: column;
+  /* width: 50%; */ 
+}
+
+.btn {
+  color: black;
+  background-color: white;
+}
+
+.entryDiv {
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://i.pinimg.com/originals/e6/61/75/e66175e3718ba427547aa7d6e5ab10d8.jpg');
+  margin: 50px;
+}
+
+.entryText {
+  text-align: start;
+  margin: 10px;
 }
 
 label {
-  color: white;
+  color: black;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px white;
 }
 
 body {

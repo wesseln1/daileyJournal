@@ -1,0 +1,28 @@
+{
+    "journalEntries": [ 
+    {
+        "date": "08-20-2019",
+        "concept": "css selectors",
+        "entry": "Learne how to use flexbox, and how to move items and content around with it. (Still shaddy on it)",
+        "mood": "confused"
+    },
+    {
+        "date": "08-21-2019",
+        "concept": "group project",
+        "entry": "Working on tribute project, laying out html and planning website out.",
+        "mood": "Happy"
+    },
+    {
+        "date": "08-22-2019",
+        "concept": "wrapping up projects",
+        "entry": "Finished HTML layout, and started styling. Still confused on flexbox. Getting better at it.",
+        "mood": "Happy"
+    },
+    {
+        "date": "08-23-2019",
+        "concept": "demenstration day",
+        "entry": "finaly got flexbox down. Saw a lot of cool ideas in classmates websites.",
+        "mood": "Happy"
+    }
+    ]
+}
