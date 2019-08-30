@@ -14,8 +14,8 @@
 <body>
     <div class="flexContainer">
 
+        <h1>Journal Entry</h1>
         <div>
-            <h1>Journal Entry</h1>
         </div>
         <div class="formDiv">
             <form action="">
@@ -29,11 +29,12 @@
                 </fieldset>
                 <fieldset>
                     <label for="journalEntry">Journal Entry</label>
-                    <input type="text" value="Journal Entry" id="journalInput" class="journalEntry form-control form-control">
+                    <input type="text" value="Journal Entry" id="journalInput"
+                        class="journalEntry form-control form-control">
                 </fieldset>
-                <fieldset>
+                <fieldset class="dropDown">
                     <label for="journalMood">Mood</label>
-                    <select id="moodInput" class="btn btn-primary dropdown-toggle dropdown-toggle-split">
+                    <select id="moodInput" class="btn dropdown-toggle dropdown-toggle-split">
                         <option>Mood</option>
                         <option value="happy">Happy</option>
                         <option value="sad">Sad</option>
@@ -45,7 +46,7 @@
                 </fieldset>
         </div>
         <div>
-            <button type="button" class="entryButton btn btn-primary">Record Entry</button>
+            <button type="button" class="entryButton btn btn-primary" id="entryBtn">Record Entry</button>
         </div>
         </form>
 
