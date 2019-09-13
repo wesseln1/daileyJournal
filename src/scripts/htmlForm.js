@@ -8,7 +8,7 @@ const mainPageHTML = {
 
         // making main flex div and opening header
         let flexContainer = htmlBuilder.createElementWithText("div", undefined, "flex-container", "flexContainer");
-        let flexContainer2 = htmlBuilder.createElementWithText("div", undefined, undefined, "flexContainer2");
+        let flexContainer2 = htmlBuilder.createElementWithText("div", undefined, "flex-container2", "flexContainer2");
         let h1Div = htmlBuilder.createElementWithText("div")
         let h1 = htmlBuilder.createElementWithText("h1", "Journal Entry", undefined, "text-in-focus")
         
@@ -29,10 +29,10 @@ const mainPageHTML = {
      let moodLabel = htmlBuilder.createElementWithText("label", "Mood", "mood-label", "moodLabel")
      
      // creating input fields for main form
-     let dateInput = htmlBuilder.createElementWithText("input", undefined, "date-input", "dateInput", undefined, "date")
-     let conceptInput = htmlBuilder.createElementWithText("input", undefined, "concept-input", "conceptInput", undefined, "text")
-     let entryInput = htmlBuilder.createElementWithText("input", undefined, "entry-input", "entryInput", undefined, "text")
-     let moodSelect = htmlBuilder.createElementWithText("select", undefined, "mood-celect", "btn", undefined)
+     let dateInput = htmlBuilder.createElementWithText("input", undefined, "date-input", "form-control", undefined, "date")
+     let conceptInput = htmlBuilder.createElementWithText("input", undefined, "concept-input", "form-control", undefined, "text")
+     let entryInput = htmlBuilder.createElementWithText("input", undefined, "entry-input", "form-control", undefined, "text")
+     let moodSelect = htmlBuilder.createElementWithText("select", undefined, "mood-select", "btn", undefined)
      
      // adding options for the select dropdown menu for moods
      let moodOption = htmlBuilder.createElementWithText("option", "How do you feel?", undefined, undefined, "")
@@ -47,7 +47,7 @@ const mainPageHTML = {
      
     // creating save button for making entrys
     let saveButtonDiv = htmlBuilder.createElementWithText("div")
-    let saveEntryButton = htmlBuilder.createElementWithText("button", "Record Entry", "entry-btn", "entryButton")
+    let saveEntryButton = htmlBuilder.createElementWithText("button", "Record Entry", "entry-btn", "entryButton", undefined, "button")
     
     // injecting flex containers
     injDiv.appendChild(flexContainer)
@@ -93,6 +93,18 @@ const mainPageHTML = {
     // appending the journal entry save button to the form
     form.appendChild(saveButtonDiv)
     saveButtonDiv.appendChild(saveEntryButton)
+
+    // adding classes for h1 animation
+    h1.classList.add("tracking-in-contract-bck-top") 
+
+    // adding class to save entry button
+    saveEntryButton.classList.add("btn", "btn-outline")
+
+    //adding classes to inputs and buttons for styling
+    dateInput.classList.add("form-control")
+    entryInput.classList.add("form-control")
+    conceptInput.classList.add("form-control")
+
     entryFetchs.getEntries()
 }
 }

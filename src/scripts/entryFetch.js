@@ -1,11 +1,11 @@
 import entryFactory from "./journal.js";
 import listener from "../scripts/logEntry.js";
 
-const domInj = document.querySelector("#flex-container");
+const url = 'http://localhost:3000/journalEntries'
 
-const entryFetch = {
+const entryFetchs = {
  getEntries(){
-        fetch('http://localhost:3000/journalEntries') // Fetch from the API
+        fetch(url) // Fetch from the API
     .then(journalEntry => journalEntry.json())  // Parse as JSON
     // console.log("entries", entries)
     .then(parsedEntries => {
@@ -13,8 +13,21 @@ const entryFetch = {
         for(let i = 0; i < parsedEntries.length; i++){
             entryFactory.makeEntry(parsedEntries[i]);
         }
+    }).then(
         listener.addEntry()
+    )
+},
+
+saveEntry(entry){
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Content-Type": "Application"
+        }, 
+        body: JSON.stringify(entry)
     })
+        .then(entry => entry.json())
+        .then(parsedEntry => parsedEntry)
 }
 }
-export default entryFetch;
+export default entryFetchs;

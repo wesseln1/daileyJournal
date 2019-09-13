@@ -1,32 +1,37 @@
 import entryFactory from "./journal.js"
+import entryFetchs from "./entryFetch.js"
 
-const domInj = document.querySelector(".flexContainer2");
-const button = document.querySelector(".entryButton")
 const journalEntry = []
 const listener = {
 
 addEntry(){
-    
-    button.addEventListener("click", (event) => {
-        const dateInput = document.querySelector("#dateInput")
-        const conceptInput = document.querySelector("#conceptInput")
-        const journalInput = document.querySelector("#journalInput")
-        const moodInput = document.querySelector("#moodInput")
-        
-        
-        const buildEntry = {
-    date: dateInput.value,
-    concept: conceptInput.value,
-    entry: journalInput.value,
-    mood: moodInput.value,
-}
 
-// console.log("built", buildEntry)
-    journalEntry.push(buildEntry)
-    let makeMyNewEntry = entryFactory.makeEntry(buildEntry)
-    domInj.appendChild(makeMyNewEntry)
-    console.log("you made a new entry")
-})
+    document.addEventListener("click", (event) => {
+        
+        const dateInput = document.querySelector("#date-input").value
+        const conceptInput = document.querySelector("#concept-input").value
+        const journalInput = document.querySelector("#entry-input").value
+        const moodInput = document.querySelector("#mood-select").value
+
+        if(event.target.id === "entry-btn"){
+            console.log(dateInput)
+            
+            const buildEntry = {
+                date: dateInput,
+                concept: conceptInput,
+                entry: journalInput,
+                mood: moodInput,
+            }
+            
+            // console.log("built", buildEntry)
+            journalEntry.push(buildEntry)
+            entryFactory.makeEntry(buildEntry)
+            entryFetchs.saveEntry(buildEntry)
+            console.log("you made a new entry", )
+        } else {
+            console.log("looking")
+        }
+        })
 }
 }
 export default listener;

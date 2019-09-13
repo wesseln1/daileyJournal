@@ -2,7 +2,7 @@ import htmlBuilder from "../scripts/htmlBuilder.js"
 
 const entryFactory = {
     makeEntry(entry){
-        let domInj = document.querySelector(".flexContainer")
+        let domInj2 = document.querySelector(".flexContainer2")
        
         let allEntriesDiv = htmlBuilder.createElementWithText("div", undefined, undefined, "journalEntries")
         let mainEntryDiv = htmlBuilder.createElementWithText("div", undefined, undefined, "entryDiv")
@@ -10,9 +10,9 @@ const entryFactory = {
         let entryDate = htmlBuilder.createElementWithText("h2", `Date: ${entry.date}`, undefined, "entryHead")
         let entryTextConcpet = htmlBuilder.createElementWithText("h3", `Concept Covered: ${entry.concept}`, undefined, "entryText")
         let entryTextMood = htmlBuilder.createElementWithText("h3", `Mood: ${entry.mood}`, undefined, "entryText")
-        let entryTextEntry = htmlBuilder.createElementWithText("p", `Mood: ${entry.entry}`, undefined, "entryText")
+        let entryTextEntry = htmlBuilder.createElementWithText("p", `Entry: ${entry.entry}`, undefined, "entryText")
 
-        domInj.appendChild(allEntriesDiv)
+        domInj2.appendChild(allEntriesDiv)
         allEntriesDiv.appendChild(mainEntryDiv)
         mainEntryDiv.appendChild(cardBodyDiv)
         cardBodyDiv.appendChild(entryDate)    
